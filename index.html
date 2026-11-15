@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Il Mio Portfolio Fotografico</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: #111111;
+      color: #f5f5f5;
+      padding: 40px 20px;
+    }
+    header {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 50px auto;
+    }
+    header h1 { font-size: 2.2rem; margin-bottom: 10px; letter-spacing: 1px; }
+    header p { color: #aaaaaa; font-size: 1.05rem; }
+    .galleria {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .scheda {
+      background: #1c1c1c;
+      border-radius: 8px;
+      overflow: hidden;
+      transition: transform 0.2s ease;
+    }
+    .scheda:hover { transform: translateY(-4px); }
+    .scheda img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      display: block;
+      cursor: pointer;
+    }
+    .didascalia {
+      padding: 12px 15px;
+      font-size: 0.9rem;
+      color: #cccccc;
+    }
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      color: #777777;
+      font-size: 0.9rem;
+    }
+    footer a { color: #ffffff; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Il Tuo Nome</h1>
+    <p>Fotografia &bull; Portfolio Personale</p>
+  </header>
+
+  <main class="galleria">
+    <!-- INIZIO FOTO 1 -->
+    <div class="scheda">
+      <a href="foto/alfa33.PNG" target="_blank">
+        <img src="foto/alfa33.PNG" alt="Descrizione foto 1">
+      </a>
+      <div class="didascalia">Titolo o luogo dello scatto 1</div>
+    </div>
+    <!-- FINE FOTO 1 -->
+
+    <!-- INIZIO FOTO 2 -->
+    <div class="scheda">
+      <a href="foto/foto2.jpg" target="_blank">
+        <img src="foto/foto2.jpg" alt="Descrizione foto 2">
+      </a>
+      <div class="didascalia">Titolo o luogo dello scatto 2</div>
+    </div>
+    <!-- FINE FOTO 2 -->
+
+    <!-- INIZIO FOTO 3 -->
+    <div class="scheda">
+      <a href="foto/foto3.jpg" target="_blank">
+        <img src="foto/foto3.jpg" alt="Descrizione foto 3">
+      </a>
+      <div class="didascalia">Titolo o luogo dello scatto 3</div>
+    </div>
+    <!-- FINE FOTO 3 -->
+  </main>
+
+  <footer>
+    Contatti: <a href="mailto:tuaemail@esempio.com">tuaemail@esempio.com</a>
+  </footer>
+
+</body>
+</html>
